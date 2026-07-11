@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #09090b;
+  color: #e4e4e7;
+  overscroll-behavior: none;
+}
+
+/* Range inputs: consistent thumb across browsers. */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+  background: #fff;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border: 0;
+  border-radius: 9999px;
+  background: #fff;
+  cursor: pointer;
+}
